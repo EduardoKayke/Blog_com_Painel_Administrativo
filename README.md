@@ -67,7 +67,7 @@ const Sequelize = require("sequelize");
 // A senha e logo após abrir um JSON
 // Host = servidor
 // Dialect = O tipo de banco de dados
-const connection = new Sequelize('guiapress', 'root', 'Ee@87654321', {
+const connection = new Sequelize('guiapress', 'root', '******', {
     host: 'localhost',
     dialect: 'mysql'
 });
