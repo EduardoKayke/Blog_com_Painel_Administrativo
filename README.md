@@ -78,7 +78,8 @@ module.exports = connection;
     5 - É ai que você vai criar os arquivos que vai utilizar. Use o link no header.ejs
 }
 
-12 - Padrão de organização MVC {
+12 - Padrão de organização MVC 
+
     - Projeto organizado por domínios e ou partes. 
     - Exemplo, domínio de artigo e gategoria.
     - São duas partes diferentes. Duas coisas diferentes.
@@ -90,6 +91,13 @@ module.exports = connection;
     - Pasta relacionada ao login.    
     - Pasta relacionada a recuperar senha.    
     - Pasta relacionada a perfil do usuário.    
-}
 
 13 - Controler é o arquivo onde ficará todas as rotas.
+
+    - Usaremos um recurso do Express.js que cria rotas.
+    - Dessa forma não usamos a variável app.
+    
+`` JavaScript
+    const express = require('express');
+    const router = express.Router();
+``
