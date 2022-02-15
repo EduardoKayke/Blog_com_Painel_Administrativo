@@ -10,8 +10,8 @@ Site de Blog com Painel Administrativo.
 7 - Criar o arquivo principal. (index.js)
 8 - Criar pastas, public, views e database.
 
-------------------------------------------------------------
 9 - Configurações no arquivo index.js
+```
 //Carregar o módulo do Express
 const express = require("express");
 //Criar uma instância do Express
@@ -49,10 +49,10 @@ app.get("/", (requisition, response) => {
 app.listen(8080, () => {
     console.log(`O servidor está rodando`);
 });
-------------------------------------------------------------
+```
 
 10 - Configurações no arquivo database.js
-``
+```
 //Importando o Sequelize
 const Sequelize = require("sequelize");
 //Objeto de conexão = const connection = new Sequelize();
@@ -68,7 +68,7 @@ const connection = new Sequelize('guiapress', 'root', 'Ee@87654321', {
 //Vamos exportar essa conexão para usar a variavel em outros
 // arquivos do nosso app.
 module.exports = connection;
-``
+```
 
 ------------------------------------------------------------
 
@@ -100,7 +100,7 @@ module.exports = connection;
     - Usaremos um recurso do Express.js que cria rotas.
     - Dessa forma não usamos a variável app.
 
-``
+```
     const express = require('express');
     const router = express.Router();
-``
+```
