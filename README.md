@@ -106,8 +106,16 @@ module.exports = connection;
 
     - Usaremos um recurso do Express.js que cria rotas.
     - Dessa forma não usamos a variável app.
+    - Crie um arquivo na pasta categories chamado:
+        CategoriesController.js
+    - Adicione dentro os comandos a seguir.
 
 ```JavaScript
     const express = require('express');
     const router = express.Router();
+
+    //Defina as suas rotas omo quiser.
+    router.get("/categories", (requisition, response) => {
+        response.send("Testando Rota de Categorias")
+    });
 ```
