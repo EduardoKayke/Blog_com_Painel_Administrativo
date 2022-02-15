@@ -2,14 +2,14 @@ const express = require('express');
 const router = express.Router();
 
 //Defina as suas rotas como quiser.
-router.get("/categories", (requisition, response) => {
-    response.send("Testando Rota de Categorias")
+router.get("/articles", (requisition, response) => {
+    response.send("Testando Rota de Artigos")
 });
 
 //Podemos criar quantas rotas e com o endereço que quisermos.
 // Rota pra criar uma nova categoria
-router.get("/admin/categories/new", (requisition, response) => {
-    response.send("Rota para criar nova Categoria")
+router.get("/admin/articles/new", (requisition, response) => {
+    response.send("Rota para criar um novo Artigo")
 });
 
 // Não esqueça de exportar o router.
