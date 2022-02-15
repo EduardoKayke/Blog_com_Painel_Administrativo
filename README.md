@@ -2,16 +2,23 @@
 Site de Blog com Painel Administrativo.
 
 1 - npm init
+
 2 - npm install --save express
+
 3 - npm install --save sequelize
+
 4 - npm install --save mysql2
+
 5 - npm install --save body-parser
+
 6 - npm install --save ejs
+
 7 - Criar o arquivo principal. (index.js)
+
 8 - Criar pastas, public, views e database.
 
 9 - Configurações no arquivo index.js
-```
+```JavaScript
 //Carregar o módulo do Express
 const express = require("express");
 //Criar uma instância do Express
@@ -52,7 +59,7 @@ app.listen(8080, () => {
 ```
 
 10 - Configurações no arquivo database.js
-```
+```JavaScript
 //Importando o Sequelize
 const Sequelize = require("sequelize");
 //Objeto de conexão = const connection = new Sequelize();
@@ -100,7 +107,7 @@ module.exports = connection;
     - Usaremos um recurso do Express.js que cria rotas.
     - Dessa forma não usamos a variável app.
 
-```
+```JavaScript
     const express = require('express');
     const router = express.Router();
 ```
