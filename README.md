@@ -52,6 +52,7 @@ app.listen(8080, () => {
 ------------------------------------------------------------
 
 10 - Configurações no arquivo database.js
+``
 //Importando o Sequelize
 const Sequelize = require("sequelize");
 //Objeto de conexão = const connection = new Sequelize();
@@ -67,19 +68,21 @@ const connection = new Sequelize('guiapress', 'root', 'Ee@87654321', {
 //Vamos exportar essa conexão para usar a variavel em outros
 // arquivos do nosso app.
 module.exports = connection;
+``
 
 ------------------------------------------------------------
 
-11 - Configuração do Bootstrap no projeto {
+11 - Configuração do Bootstrap no projeto 
+
     1 - Baixe o bootstrap - Compiled CSS and JS
     2 - Crie uma pasta chamada bootstrap dentro da pasta public e coloque os aquivos dentro.
     3 - Agora basta colcar os links de conexão do - CDN via jsDelivr - e usar nos arquivos que quiser.
     4 - Crie uma pasta chamada partials dentro da pasta views.
     5 - É ai que você vai criar os arquivos que vai utilizar. Use o link no header.ejs
-}
 
 12 - Padrão de organização MVC 
 
+    MVC:
     - Projeto organizado por domínios e ou partes. 
     - Exemplo, domínio de artigo e gategoria.
     - São duas partes diferentes. Duas coisas diferentes.
@@ -96,8 +99,8 @@ module.exports = connection;
 
     - Usaremos um recurso do Express.js que cria rotas.
     - Dessa forma não usamos a variável app.
-    
-`` JavaScript
+
+``
     const express = require('express');
     const router = express.Router();
 ``
