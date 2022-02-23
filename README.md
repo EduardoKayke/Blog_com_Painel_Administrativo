@@ -87,7 +87,7 @@ module.exports = connection;
     4 - Crie uma pasta chamada partials dentro da pasta views.
     5 - É ai que você vai criar os arquivos que vai utilizar. Use o link no header.ejs
 
-12 - Padrão de organização MVC 
+12 - Padrão de organização MVC.
 
     MVC:
     - Projeto organizado por domínios e ou partes. 
